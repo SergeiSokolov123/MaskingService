@@ -1,13 +1,13 @@
 plugins {
     id("java")
+    id("maven-publish") // Добавляем плагин для публикации
 }
 
-group = "maskingService"
-version = "1.0"
+group = "com.github.SergeiSokolov123" // Убедитесь, что это правильный groupId
+version = "1.0.2"
 
 repositories {
     mavenCentral()
-    maven { url = uri("https://jitpack.io") }
 }
 
 dependencies {
